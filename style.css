@@ -1,0 +1,164 @@
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 65%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weatherForm {
+  margin: 20px;
+}
+
+.inputField {
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cityInput {
+  all: unset;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  all: unset;
+  cursor: pointer;
+  /* opacity: initial; */
+}
+
+.card {
+  /* background: linear-gradient(145deg, hsl(62, 100%, 75%), hsl(211, 100%, 76%)); */
+  background-color: aliceblue;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-info {
+  /* background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%)); */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 10px;
+}
+p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+.cityDisplay {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.descDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 6px;
+}
+.weatherEmoji {
+  margin: 5px;
+  filter: drop-shadow(0 10px 40px #000);
+}
+
+.containerDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.divs {
+  margin: 15px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-img {
+  margin: 6px;
+  height: 100px;
+  width: 100px;
+}
+
+.errorDisplay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and small devices) */
+@media (max-width: 768px) {
+  .cityDisplay {
+    font-size: 2rem;
+  }
+
+  .descDisplay {
+    font-size: 1.2rem;
+  }
+
+  .divs {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .div-img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* For screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+  .card {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .inputField {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cityInput {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  button[type="submit"] {
+    width: 20%;
+  }
+  .containerDiv {
+    flex-direction: column;
+  }
+
+  .divs {
+    margin: 10px auto;
+  }
+}
